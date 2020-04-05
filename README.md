@@ -30,3 +30,6 @@ object example:
 ```
 {"actors":"Bruce Willis, Sylvester Stallone"}
 ```
+
+### current issue:
+unit tests, can't get the testing part connect to the rest of the app fully and all tests return 404
