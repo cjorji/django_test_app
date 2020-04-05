@@ -9,5 +9,24 @@ for windows: ```./Scripts/activate```
 for linux/osx: ```source ./Scripts/activate```
 
 ```
-pip install -r 
+pip install -r pip_reqs.txt
+cd myapp
+python manage.py runserver
+```
+
+the server should now be up and running locally
+
+# endpoints
+
+## hello_world
+GET: returns a hello world message json obj
+
+## earliest_10_movies_of_current_year
+GET: returns a list of 10 earliest movies of the current year
+
+## latest_movies_for_actors
+POST: post a json object with a single field "actors" and the api will return a list of maximum 10 latest movies 
+object example:
+```
+{"actors":"Bruce Willis, Sylvester Stallone"}
 ```
